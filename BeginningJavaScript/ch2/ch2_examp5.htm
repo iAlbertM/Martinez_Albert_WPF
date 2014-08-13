@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Chapter 2 Example 4</title>
+	<title>Chapter 2 Example 5</title>
 </head>
 <body>
 	<script type="text/javascript">
-	//equation is C = 5/9 (F-32)
-	var degFahren = prompt("Enter the degrees in Fahrenheit", 50);
-	var degCent;
-	degCent = 5/9 * (degFahren - 32);
+	var greetingString = "Hello ";
+	var myName = prompt("Please enter your name ","");
+	var concatString;
 
-	alert(degCent);
+	document.write(greetingString + myName + " " + "<br>");
+	concatString = greetingString + "" + myName;
+	document.write(concatString);
 	</script>
 </body>
 </html>
