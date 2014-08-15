@@ -8,6 +8,9 @@ var targetSalary;
 var associatedCosts;
 var billable hours;
 
+targetSalary = prompt("To calculate your base rate for you freelance web design and development business,\nPlease provide me with your target annual salary");
+
+
 
 
 //Results Variable:
