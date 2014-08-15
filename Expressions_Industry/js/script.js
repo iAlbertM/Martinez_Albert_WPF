@@ -15,4 +15,4 @@ billableHours = prompt("Enter your total billable hours");
 var baseRate = (targetSalary + associatedCosts) / billableHours;
 
 // Printed Output 
-console.log("Congratulations! According to your $" + targetSalary + "target salary,\nYour associated costs of $" + associatedCosts + ",\nand your " + billableHours + " hours that you gave as billable hours,\n Your base rate of pay is $" + X + " !");
+console.log("Congratulations! According to your $" + targetSalary + "target salary,\nYour associated costs of $" + associatedCosts + ",\nand your " + billableHours + " hours that you gave as billable hours,\n Your base rate of pay is $" + baseRate + " !");
