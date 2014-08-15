@@ -15,4 +15,3 @@ var schedule = startTime - endTime / tasks;
 
 // Print out allotted time for each task
 console.log("In order to meet your goal time of " + endTime + ", each of your " + tasks + " should take approximately " + schedule + "hours.");
-
