@@ -11,3 +11,4 @@ endTime = prompt("What is your planned end time?\nPlease include am/pm in your g
 tasks = prompt("How many tasks do you plan on generally completing on a daily basis?");
 
 // formula for dividing up time evenly according to number of daily tasks: start time - end time / # of tasks
+var schedule;
