@@ -6,7 +6,7 @@
 var startTime;
 var endTime;
 var tasks;
-startTime = prompt("In order to accurately create a schedule that fits your schedule,\nPlease state what time you generally start your day?");
+startTime = parseInt(prompt("In order to accurately create a schedule that fits your schedule,\nPlease state what time you generally start your day?"));
 endTime = parseInt(prompt("What is your planned end time?\nPlease do not include am/pm in your goal time"));
 tasks = prompt("How many tasks do you plan on generally completing on a daily basis?");
 
@@ -14,4 +14,4 @@ tasks = prompt("How many tasks do you plan on generally completing on a daily ba
 var schedule = startTime - endTime / tasks;
 
 // Print out allotted time for each task
-console.log("In order to meet your goal time of " + endTime + ", each of your " + tasks + " tasks should take approximately " + schedule + " hours.");
+console.log("In order to meet your goal time of " + endTime + "p.m., each of your " + tasks + " tasks should take approximately " + schedule + " hours.");
