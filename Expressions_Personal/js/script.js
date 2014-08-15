@@ -11,7 +11,7 @@ endTime = parseInt(prompt("What is your planned end time?\nPlease do not include
 tasks = prompt("How many tasks do you plan on generally completing on a daily basis?");
 
 // formula for dividing up time evenly according to number of daily tasks: start time - end time / # of tasks
-var schedule = startTime - endTime / tasks;
+var schedule = (startTime - endTime) / tasks;
 
 // Print out allotted time for each task
 console.log("In order to meet your goal time of " + endTime + "p.m., each of your " + tasks + " tasks should take approximately " + schedule + " hours.");
