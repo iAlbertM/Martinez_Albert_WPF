@@ -4,6 +4,8 @@
 
 // Problem: Create a base rate of pay for a Freelancer in Web Design and Developement.
 // Givens: To calculate this you need: (target salary + Associated Costs) / Billable hours
+var targetSalary;
+
 
 
 
