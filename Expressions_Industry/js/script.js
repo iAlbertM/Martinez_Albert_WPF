@@ -6,6 +6,7 @@
 // Givens: To calculate this you need: (target salary + Associated Costs) / Billable hours
 var targetSalary;
 var associatedCosts;
+var billable hours;
 
 
 
