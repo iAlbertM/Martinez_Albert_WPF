@@ -13,3 +13,5 @@ tasks = prompt("How many tasks do you plan on generally completing on a daily ba
 // formula for dividing up time evenly according to number of daily tasks: start time - end time / # of tasks
 var schedule = startTime - endTime / tasks;
 
+// Print out allotted time for each task
+
