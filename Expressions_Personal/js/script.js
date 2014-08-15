@@ -3,3 +3,6 @@
 //Expressions_Personal
 
 // Problem: Create a Plan to achieve daily goals
+var startTime;
+var endTime;
+var tasks;
