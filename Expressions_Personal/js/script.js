@@ -14,4 +14,5 @@ tasks = prompt("How many tasks do you plan on generally completing on a daily ba
 var schedule = startTime - endTime / tasks;
 
 // Print out allotted time for each task
+console.log("In order to meet your goal time of " + X+ ", each of your " + X + " should take approximately " + X + "hours.");
 
