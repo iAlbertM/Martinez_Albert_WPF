@@ -10,7 +10,7 @@ var billableHours;
 
 targetSalary = prompt("To calculate your base rate for you freelance web design and development business,\nPlease provide me with your target annual salary");
 associatedCosts = prompt("Please enter your associated costs with your business (generally this is about 30% of your target salary");
-	
+billableHours = prompt("Enter your total billable hours");
 
 
 
