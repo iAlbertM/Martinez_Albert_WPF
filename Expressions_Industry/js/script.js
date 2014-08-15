@@ -12,6 +12,6 @@ associatedCosts = prompt("Please enter your associated costs with your business 
 billableHours = prompt("Enter your total billable hours");
 
 //Results Variable:
-var baseRate;
+var baseRate = (targetSalary + associatedCosts) / billableHours;
 
 // Printed Output 
