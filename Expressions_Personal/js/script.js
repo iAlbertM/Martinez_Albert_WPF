@@ -8,3 +8,4 @@ var endTime;
 var tasks;
 startTime = prompt("In order to accurately create a schedule that fits your schedule,\nPlease state what time you generally start your day?");
 endTime = prompt("What is your planned end time?\nPlease include am/pm in your goal time");
+tasks = prompt("How many tasks do you plan on generally completing on a daily basis?");
