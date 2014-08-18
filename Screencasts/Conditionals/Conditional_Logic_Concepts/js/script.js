@@ -14,5 +14,5 @@ if(temp > 70) {
 }
 
 if(temp == 75){
-	goToTheBeach();
+	goToTheBeach();ds
 }
