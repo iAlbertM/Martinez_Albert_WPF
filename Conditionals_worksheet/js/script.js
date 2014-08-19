@@ -8,7 +8,14 @@
 // Problem: Create a program that can convert any given degree Celsius into Fahrenheit and viece versa depending ons a temperature entered by the user: Celsius ("C") or Fahrenheit ("F")
 
 // Given:
-var degrees = Number(prompt("Convert any given temperature in degrees Celsius or Fahrenheit!\nTo begin, please enter the degrees temperature", " "););
-var unit = prompt("Next, Enter the initial known Temperature Type:\n'F' for Fahrenheit or 'C' for Celsius", "C");
+var degrees = Number(prompt("Please enter any temperature in \xB0Celsius or \xB0Fahrenheit",));
+var unit;
+unit = prompt("Enter the Unit of temperature to convert to: 'F' for Fahrenheit or 'C' for Celsius", "C");
+	if(toUpperCase(unit) == "F") {
+		5 / 9 * degrees - 32;
+	} else
+	if(toUpperCase(unit) == "C") {
+		9 / 5 * degrees + 32;
+	}
 
-// if degrees are in 
+// if unit  
