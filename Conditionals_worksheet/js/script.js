@@ -2,6 +2,7 @@
 // 08/18/2014
 // Conditionals_worksheet
 
+
 // Group 1: Expressions with Conditionals
 // Celsius to Fahrenheit converter
 
@@ -13,21 +14,15 @@ var converted;
 
 // If the value of unit is equal to "F"
 if(unit.toUpperCase() == "F") {
-	// Then convert unit into degrees Fahrenheit and store in a variable named: converted
-	converted = degrees * 9 / 5 + 32;
-	// Print to the console: first the converted temperature | the originating temperature
-	console.log("The Temperature is " + converted + "\xB0F | " + degrees + "\xB0C");
+	converted = degrees * 9 / 5 + 32; // Then convert unit into degrees Fahrenheit and store in a variable named: converted
+	console.log("The Temperature is " + converted + "\xB0F | " + degrees + "\xB0C"); // Print to the console: first the converted temperature | the originating temperature
 }
-
 // If the value of unit is equal to "C"
 else if(unit.toUpperCase() == "C") {
-	// Convert unit into degrees Celsius and store in a variable named: converted
-	converted = 5 / 9 * (degrees - 32);
-	// Print to the console: first the converted temperature | the originating temperature
-	console.log("The Temperature is " + converted + "\xB0C | " + degrees + "\xB0F");
+	converted = 5 / 9 * (degrees - 32); // Convert unit into degrees Celsius and store in a variable named: converted
+	console.log("The Temperature is " + converted + "\xB0C | " + degrees + "\xB0F"); // Print to the console: first the converted temperature | the originating temperature
 } else {
-	// Otherwise print to the console: "No valin input was found"
-	console.log("I'm sorry but that wasn't a valid input. You need to enter a letter 'C' for Celsius or 'F' for Fahrenheit");
+	console.log("I'm sorry but that wasn't a valid input. You need to enter a letter 'C' for Celsius or 'F' for Fahrenheit"); // Otherwise print to the console: "No valin input was found"
 }
 
 
@@ -55,3 +50,4 @@ else if (!(corUser) && corPass) {
 else if (corUser && !(corPass)) {
 	console.log("Password does not match our records"); // Print to the console: “Password does not match our records.”
 }
+
