@@ -24,7 +24,7 @@
 
 // (gpa > 2.0) ? console.log("You can graduate") : console.log("GPA is too low!");
 
-
+	
 // Example 3
 
 var age = 11;
