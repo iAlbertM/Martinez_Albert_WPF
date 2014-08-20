@@ -36,3 +36,5 @@ else if(unit.toUpperCase() == "C") {
 
 // Group 2: Multiple Results
 // Check the Login
+
+//Problem: Provide user login and password validation. Including pop-up error messages when incorrect or invalid entries are submitted.
