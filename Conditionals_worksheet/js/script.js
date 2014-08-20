@@ -25,10 +25,14 @@ if(unit.toUpperCase() == "F") {
 // If the value of unit is equal to "C"
 else if(unit.toUpperCase() == "C") {
 	// Convert unit into degrees Celsius and store in a variable named: converted
-	converted = degrees - 32 * 5 / 9;
+	converted = 5 / 9 * (degrees - 32);
 	// Print to the console: first the converted temperature | the originating temperature
 	console.log("The Temperature is " + converted + "\xB0C | " + degrees + "\xB0F");
 } else {
 	// Otherwise print to the console: "No valin input was found"
 	console.log("I'm sorry but that wasn't a valid input. You need to enter a letter 'C' for Celsius or 'F' for Fahrenheit");
 }
+
+
+// Group 2: Multiple Results
+// Check the Login
