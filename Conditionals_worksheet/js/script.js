@@ -43,3 +43,7 @@ var logPass = prompt("Please enter your password"); // Prompt user for existing 
 var corUser = logName == userName; // Check if logName matches userName. Store results in corUser
 var corPass = logPass == userPass; // Check if logPass matches userPass. Store results in corUser
 
+// Check if corUser & corPass equate to true
+if(corUser && corPass) {
+	console.log("Welcome, " + userName + "!"); // Print output to the console: e.g., "Welcome, AlbertM!"
+}
