@@ -36,16 +36,10 @@ else if(unit.toUpperCase() == "C") {
 
 // Problem: Provide user login and password validation. Including pop-up error messages when incorrect or invalid entries are submitted.
 // Givens:
-var goodName = prompt("To create a login:\nPlease enter a username"); // Prompt user for sername. Store in variable: userName
-var goodPass = prompt("For your security,\nPlease enter a password"); // Prompt user for a password. Store in variable: userPass
-// Prompt user for existing userName and userPass
-var userName = prompt("Please enter your username");
-var userPass = prompt("Please enter your password");
+var userName = prompt("To create a login:\nPlease enter a username"); // Prompt user for a username. Store in variable: userName
+var userPass = prompt("For your security,\nPlease enter a password"); // Prompt user for a password. Store in variable: userPass
+var logName = prompt("To Login\nPlease enter your username"); // Prompt user for existing userName and store in variable: loginName
+var logPass = prompt("Please enter your password"); // Prompt user for existing userPass and store in variable: loginPass
+var corUser = logName == userName; // Check if logName matches userName. Store results in corUser
+var corPass = logPass == userPass; // Check if logPass matches userPass. Store results in corUser
 
-// Check if input matches userName and userPass
-
-
-
-// Print to the console: "User not found. Try again." if userName incorrect
-
-// Print to the console: “Password does not match our records.”  if userName matches but userPass does not
