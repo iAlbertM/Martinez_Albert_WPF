@@ -55,17 +55,19 @@ else if (corUser && !(corPass)) {
 // Group 3: Multiple Conditions
 // Tire Pressure 1
 
-// Problem: Tires need correct pressure to pass spec. Front tires must have equal tire pressure, same for the rear tires. The front and rear pressures do not need to match each other.
+// Problem: Create a single conditional statement that checks if a cars given tire pressures pass spec. Front tires must have equal tire pressure, same for the rear tires. The front and rear pressures do not need to match each other.
 
 // Givens:
-var tireFL;
-var tireFR;
-var tireRL;
-var tireRR;
-var tiresPSI = []
+var tireFL = Number(prompt("What is PSI of the Front-Left Tire?"));
+var tireFR = Number(prompt("What is PSI of the Front-Right Tire?"));;
+var tireRL = Number(prompt("What is PSI of the Rear-Left Tire?"));;
+var tireRR = Number(prompt("What is PSI of the Rear-Right Tire?"));;
+var tiresPSI = [tireFL, tireFR, tireRL, tireRR]
 
 // if tireFL is equal to tireFR and tireRL is equal to tireRR 
-
+if ((tireFL == tireFR) && (tireRL == tireRR)) {
+	
+}
 // Print "Passed Spec!" to the console
 
 // Otherwise print to the console "Check your tires!"
