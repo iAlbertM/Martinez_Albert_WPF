@@ -51,3 +51,7 @@ if(corUser && corPass) {
 else if (!(corUser) && corPass) {
 	console.log("User not found. Try again."); // Print the output to the console: "User not found. Try again."
 }
+// If corUser is true and corPass is NOT true
+else if (corUser && !(corPass)) {
+	console.log("Password does not match our records"); // Print to the console: “Password does not match our records.”
+}
