@@ -64,7 +64,11 @@ var tireRL;
 var tireRR;
 var tiresPSI = []
 
+// if tireFL is equal to tireFR and tireRL is equal to tireRR 
 
+// Print "Passed Spec!" to the console
+
+// Otherwise print to the console "Check your tires!"
 
 
 
