@@ -5,24 +5,30 @@
 // Group 1: Expressions with Conditionals
 // Celsius to Fahrenheit converter
 
-// Problem: Temperature Converter. Create a program that can convert any given
-// degree Celsius into Fahrenheit and vice versa depending on a temperature entered by the user:
-// Celsius ("C") or Fahrenheit ("F")
-
+// Problem: Temperature Converter. Create a program that converts a temperature in degrees Fahrenheit or Celsius entered by the user, which will then convert it into the other (i.e., F to C or C to F) Celsius ("C") or Fahrenheit ("F")
 // Givens:
-// Ask the user to enter any temperature in eithre degrees Celcius or degrees Fahrenheit
+// Store the initial temperature, entered by the user, in a variable named: degrees
 var degrees = Number(prompt("Please enter any temperature in \xB0Celsius or \xB0Fahrenheit"));
 
-// If unit variable  is equal to "F", then the input was in Degrees Celcius and will be converted 
-var unit = prompt("Enter the Unit you want to convert too:\n'F' for Fahrenheit or 'C' for Celsius").toUpperCase();
+// Determine the output unit and store the value of the prompt() in a variable named: unit
+var unit = prompt("Enter the Unit you want to convert too:\n'F' for Fahrenheit or 'C' for Celsius");
 var converted;
-// if the value of unit is equal to "F", Convert the unit value into degrees Celcius
-if(unit == "F") {
-	convert = 5 / 9 * degrees - 32;
-	console.log("The Temperature is " + converted + "\xB0F (Fahrenheit) | " + degrees + "\xB0C (Celsius)");
+
+// If the value of unit is equal to "F"
+if(unit.toUpperCase() == "F") {
+	// Convert unit into degrees Fahrenheit and store in a variable named: converted
+	converted = degrees * 9 / 5 + 32;
+	// Print to the console: first the converted temperature | the originating temperature
+	console.log("The Temperature is " + converted + "\xB0F | " + degrees + "\xB0C");
 }
-// Else if the value of unit is equal to "C", Convert the unit value into degrees Fahrenheit
+
+// If the value of unit is equal to "C"
 else if(unit.toUpperCase() == "C") {
-		9 / 5 * degrees + 32;
-		document.write("The Temperature is " + converted + "\xB0C (Celsius) | " + degrees + "\xB0F (Fahrenheit)");
+	// Convert unit into degrees Celsius and store in a variable named: converted
+	converted = degrees - 32 * 5 / 9;
+	// Print to the console: first the converted temperature | the originating temperature
+	console.log("The Temperature is " + converted + "\xB0C | " + degrees + "\xB0F");
+} else {
+	// Otherwise print to the console: "No valin input was found"
+	console.log("I'm sorry but that wasn't a valid input. You need to enter a letter 'C' for Celsius or 'F' for Fahrenheit");
 }
