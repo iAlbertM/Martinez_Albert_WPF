@@ -63,14 +63,17 @@ var tireFR = Number(prompt("What is PSI of the Front-Right Tire?"));;
 var tireRL = Number(prompt("What is PSI of the Rear-Left Tire?"));;
 var tireRR = Number(prompt("What is PSI of the Rear-Right Tire?"));;
 var tiresPSI = [tireFL, tireFR, tireRL, tireRR]
+var froTires = tiresPSI[0] == tiresPSI[1];
+var reaTires = tiresPSI[2] == tiresPSI[3];
 
 // if tireFL is equal to tireFR and tireRL is equal to tireRR 
-if ((tireFL == tireFR) && (tireRL == tireRR)) {
-	
+if ((tiresPSI[0] == tiresPSI[1]) && (tiresPSI[2] == tiresPSI[3])) {
+	console.log("The tire's pass spec!"); // print to the console: "Tires passed spec"
+} else {
+	console.log("Get your tires checked out!"); // Otherwise print to the console "Check your tires!"
 }
-// Print "Passed Spec!" to the console
 
-// Otherwise print to the console "Check your tires!"
+
 
 
 
