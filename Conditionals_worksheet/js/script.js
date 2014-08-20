@@ -67,10 +67,12 @@ var froTires = tiresPSI[0] == tiresPSI[1];
 var reaTires = tiresPSI[2] == tiresPSI[3];
 
 // if tireFL is equal to tireFR and tireRL is equal to tireRR 
-if ((tiresPSI[0] == tiresPSI[1]) && (tiresPSI[2] == tiresPSI[3])) {
+if (froTires && reaTires) {
 	console.log("The tire's pass spec!"); // print to the console: "Tires passed spec"
+	document.write("The tire's pass spec!") // so the user sees if their tires passed spec
 } else {
 	console.log("Get your tires checked out!"); // Otherwise print to the console "Check your tires!"
+	document.write("Get your tires checked out!"); // print output to the user "Check your tires!"
 }
 
 
