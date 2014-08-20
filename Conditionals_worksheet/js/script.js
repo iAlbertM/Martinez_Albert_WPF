@@ -47,3 +47,7 @@ var corPass = logPass == userPass; // Check if logPass matches userPass. Store r
 if(corUser && corPass) {
 	console.log("Welcome, " + userName + "!"); // Print output to the console: e.g., "Welcome, AlbertM!"
 }
+// If corUser is NOT true and corPass is true	
+else if (!(corUser) && corPass) {
+	console.log("User not found. Try again."); // Print the output to the console: "User not found. Try again."
+}
