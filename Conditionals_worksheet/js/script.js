@@ -64,15 +64,20 @@
 	// Problem: Create a single conditional statement that checks if a cars given tire pressures pass spec. Front tires must have equal tire pressure, same for the rear tires. The front and rear pressures do not need to match each other.
 
 	// Givens:
-	var tireFL = Number(prompt("What is the PSI for the Front-Left Tire?"));
+	var tirePSI = Number(prompt("What is the PSI for the Front-Left Tire?")); // Ask for the tire's PSI
+		if(this == "") {prompt("What is the PSI for the Front-Left Tire?")}
 	var tireFR = Number(prompt("What is the PSI for the Front-Right Tire?"));;
+		if(tireFR == "") {prompt("What is the PSI for the Front-Right Tire?")}
 	var tireRL = Number(prompt("What is the PSI for the Rear-Left Tire?"));;
+		if(tireRL == "") {prompt("What is the PSI for the Rear-Left Tire?")}
 	var tireRR = Number(prompt("What is the PSI for the Rear-Right Tire?"));;
+		if(tireRR == "") {prompt("What is the PSI for the Rear-Right Tire?")}
 	var tiresPSI = [tireFL, tireFR, tireRL, tireRR] //store all tire psi into an array
 	var froTires = tiresPSI[0] == tiresPSI[1]; // front two tire pressures need to match in order to pass spec
 	var reaTires = tiresPSI[2] == tiresPSI[3]; // rear two tire pressures need to match in order to pass spec
 	var tireSpec;
-
+	
+	
 	// Refactored code from line 76 - 82 and consolidated it into a single conditional
 		// if (froTires && reaTires) {
 		// 	console.log("The tire's pass spec!"); // print to the console: "Tires passed spec"
