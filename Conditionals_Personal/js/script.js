@@ -1,17 +1,26 @@
 //Albert Martinez
-//08/14/2014
-//Expressions_Personal
+//08/21/2014
+//Conditionals_Personal
 
-// Problem: Create a Plan to achieve daily goals
-var startTime;
-var endTime;
-var tasks;
-startTime = parseInt(prompt("In order to accurately create a schedule that fits your schedule,\nPlease state what time you generally start your day?"));
-endTime = parseInt(prompt("What is your planned end time?\nPlease do not include am/pm in your goal time"));
-tasks = prompt("How many tasks do you plan on generally completing on a daily basis?");
+// Problem: People have a hard time thinking of recipes when starving. Create a program that could help by providing a recipe based on their pantry items and time constraints.
 
-// formula for dividing up time evenly according to number of daily tasks: start time - end time / # of tasks
-var schedule = (startTime - endTime) / tasks;
+// Givens:
+var myPantry = prompt("To Find Recipes that you can make with your ingredients\nEnter the ingredients you want to use or have to use"); // Prompting the user to provide his or her pantry ingredients
+	if (myPantry == "") {
+		prompt("I think you forgot to fill in the field. Please try again.");
+}
+var myTime = prompt("How much time do you have for cooking or baking? Use only minutes please, for example if you enter 120 which is 120 minutes or 2 hours") // This is to avoid frustration when seeing a really yummy recipe but takes 1 month to make and you only have 15 min
+	if (myTime == "") {
+		prompt("I think you forgot to fill in the field. Please try again.");
+}
+var RasChocMousse = [20, "raspberries", "chocolate bar", "half-n-half"]; // sample recipe - number stands for cooking time minutes
+var ingCheck = myPantry == RasChocMousse;
+var timCheck = myTime == RasChocMousse[0];
 
-// Print out allotted time for each task
-console.log("In order to meet your goal time of " + endTime + "p.m., each of your " + tasks + " tasks should take approximately " + schedule + " hours.");
+if (ingCheck && timCheck) {
+	console.log("Your list of " + myPantry + "ingredients within your pantry and your " + myTime + " minutes contstraint returned the Recipe for Raspberry Chocolate Mousse is a match!");
+} else {
+	console.log("Sorry, maybe next time we go grocery shopping!");
+}
+
+
