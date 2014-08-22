@@ -3,12 +3,14 @@
 // Conditionals Industry
 
 // Problem: Create an program to quickly provide a rough estimate of your weekly pay as a Desiner and/or Developer
+
+// Givens
 var workHrs = prompt("Weekly Hours\nHow many hours did you work on the project this week?");
  if (workHrs == "") { // validation for the user input
  	prompt("You may have forgotten to fill that last field there.\nHappens to the best of us when we're excited! Try again.");
  }
  if (workHrs == 0) { //checking to see if user worked at all
- 	console.log("No work equals no pay. Sorry! Try harder next time!")
+ 	console.log("No work equals no pay.\nSorry! Try harder next time!")
  }
 var hourlyRate = prompt("What is your base rate on these project?"); // Needed for formula for client quote
  if (hourlyRate == "") {// checking for empty string --validation 
