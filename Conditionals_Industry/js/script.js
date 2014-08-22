@@ -1,19 +1,22 @@
-//Albert Martinez
-//08/14/2014
-//Expressions_Industry
+// Albert Martinez
+// 08/21/2014
+// Conditionals Industry
 
-// Problem: Create a base rate of pay for a Freelancer in Web Design and Developement.
-// Givens: To calculate this you need: (target salary + Associated Costs) / Billable hours
-var targetSalary;
-var associatedCosts;
-var billableHours;
-targetSalary = prompt("To calculate your base rate for you freelance web design and development business,\nPlease provide me with your target annual salary");
-associatedCosts = prompt("Please enter your associated costs with your business (generally this is about 30% of your target salary");
-billableHours = prompt("Enter your total billable hours");
+// Problem: Create an estimate to provide a rough estimate on the cost of a project based on a weekly average hours worked and multiplied by the rate of pay
 
-//Results Variable:
-var baseRate = (targetSalary + associatedCosts) / billableHours;
+// Givens:
+var workHrs = prompt("To determine estimate for quote, How many hours did you work on the project this week (whole numbers please)?");
+ if (workHrs == "") { // validation for the user input
+ 	prompt("You may have forgotten to fill that last field there. Happens to the best of us when we're excited! Try again.");
+ }
+ if (workHrs == 0) { //checking to see if user worked at all
+ 	console.log("No work equals no pay. Sorry! Try harder next time!")
+ }
+var ratePay = prompt("What is your rate of Pay with these types of projects?"); // Needed for formula for client quote
+ if (ratePay == "") {// checking for empty string --validation
+ 	prompt("You may have forgotten to fill that last field there. Happens to the best of us when we're excited! Try again.");
+ }
+var wkProgress = workHrs * ratePay; // calculating the project quote
 
-// Printed Output 
-console.log("Congratulations! According to your $" + targetSalary + "target salary,\nYour associated costs of $" + associatedCosts + ",\nand your " + billableHours + " hours that you gave as billable hours,\n Your base rate of pay is $" + baseRate + " !");
-alert("Congratulations! According to your $" + targetSalary + "target salary,\nYour associated costs of $" + associatedCosts + ",\nand your " + billableHours + " hours that you gave as billable hours,\n Your base rate of pay is $" + baseRate + " !");
+// Print to the console the results of the user input and the end rough estimate it equates to. 
+console.log("Based on your " + workHrs + " hours worked this week at your current rate of pay, $" + ratePay + ", you can quote the client: $" + wkProgress + "!");
