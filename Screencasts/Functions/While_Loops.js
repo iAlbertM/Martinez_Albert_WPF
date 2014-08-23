@@ -13,7 +13,7 @@ while (b > 0){ // Checks the condition
 }
 
 
-// Loops - Do WHile Loops
+// Loops - Do While Loops
 console.log("---------- do...while loops ----------");
 
 
@@ -26,5 +26,9 @@ do{ // Code block will always run once before the loops first iteration
 while(c > 0); 
 
 
+// Loops - For Loops
+console.log("---------- for loops ----------");
 
-
+for (var i = 10; i > 0; i--){
+	console.log(i + " kegs on the wall")
+}
