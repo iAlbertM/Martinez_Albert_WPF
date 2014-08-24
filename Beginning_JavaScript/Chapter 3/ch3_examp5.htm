@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chapter 3 Example 5</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function convertToCentigrade(degFahren){ 	// Defining the function convertToCentigrade and 1 parameter, degFahren
+			var degCent; 							// Declare the variable degCent
+			degCent = 5 / 9 * (degFahren - 32); 	// Assign the variable degCent, result of subtracting 32 from degCent, muliplied by 5, then divided by 9
+				return degCent; 					// Bring back the result to the variable  degCent
+		}
+
+		var degFahren = new Array(100, 78, 115); 		// Creating an array called degFahren with degFahren[3] at the moment
+		var degCent = new Array(); 						// Declaring a new Array named degCent with an empty index
+		var loopCounter; 								// Declaring the variable loopCounter
+
+		for (loopCounter = 0; loopCounter <= 2; loopCounter++){						// creating a for loop |  setup index: "loopCounter = 0"; | check the conditional: "loopCounter <= 2"; | establish the increment/decrement (increment in this case): "loopCounter++"
+																					// the index start its iteration, the condition is checked (0<=2 = TRUE) so it continues
+			degCent[loopCounter] = convertToCentigrade(degFahren[loopCounter]); 	// the array degCent with index "[loopcounter]" is being set to the result of the convertToCentigrade function which means with every iteration of the for loop, the result of the convertToCentigrade(degFahren) function will be written into the degCent's index. The [loopCounter] index states it will increment with every iteration where the condition equates to true.
+		}
+
+		for (loopCounter = 2; loopCounter >= 0; loopCounter--){ 	//Same process as the above for loop
+			document.write("Value " + loopCounter + " was " + degFahren[loopCounter] + " degrees Fahrenheit\nWhich is " + degCent[loopCounter] + " degrees centigrade<br>"); 	// the code block executes to write to the DOM a concatenated string
+		}
+	</script>
+</body>
+</html>
