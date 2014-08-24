@@ -23,11 +23,11 @@ function calcCirc(r){				// Defining the calcCirc() wand establishing a paramete
 // Problem: Calculate how many bee stings it takes to kill an animal in a function
 
 // Givens
-// To kill an animal =  8.666666667 bee stings * 1.0lb
+// To kill an animal =  8.666666667 bee stings for each 1lb gives the formula = fatal stings = 8.666666667 * victim weight lbs.
 var victimWt = 150; // Victims wight in lbs.
 var fatalStings = beeSting(victimWt);
 
-console.log("It takes " + fatalStings + " to kill this animal.");
+console.log("It takes " + fatalStings + " to kill this " + victimWT + ".lb animal.");
 
 function beeSting(wt){
 	return 8.666666667 * wt;
