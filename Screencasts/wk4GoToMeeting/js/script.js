@@ -22,3 +22,8 @@ while (max === "" || isNaN(max)) {
 	// re-prompt the use if either condition returns true
 	max = prompt("Please enter a max number:");
 }
+
+// CREATE A FUNCTION TO RETURN RANDOM NUMBER
+function randomizer(minNum, maxNum){
+
+}
