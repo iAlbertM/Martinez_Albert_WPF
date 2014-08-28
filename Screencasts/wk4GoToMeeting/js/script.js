@@ -12,3 +12,13 @@ while (min === "" || isNaN(min)) {
 	// re-prompt user while either condition is true
 	min = prompt("Do not leave fields empty and enter only numbers!\nPlease enter a min number:")
 }
+
+// PROMPT USER FOR MAX NUM
+var max = prompt("Please enter a max number:");
+
+// validate user prompts 
+// check for empty fields and non numbers
+while (max === "" || isNaN(max)) {
+	// re-prompt the use if either condition returns true
+	max = prompt("Please enter a max number:");
+}
