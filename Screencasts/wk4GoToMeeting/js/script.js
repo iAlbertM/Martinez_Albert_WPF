@@ -31,3 +31,9 @@ function randomizer(minNum, maxNum){
 	// return random number outside of our function
 	return randomNum;
 }
+
+// NEED A FUNCTION CALL IN ORDER TO RUN IT
+// "CATCH" RETURNED VARIABLE
+var results1 = randomizer(min, max);
+// check if function is reusable
+console.log(results1);
