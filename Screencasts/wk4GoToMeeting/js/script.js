@@ -25,5 +25,9 @@ while (max === "" || isNaN(max)) {
 
 // CREATE A FUNCTION TO RETURN RANDOM NUMBER
 function randomizer(minNum, maxNum){
+	// formula for generating random number using Math method
+	var randomNum = Math.round(Math.random() * (maxNum - minNum) + Number(minNum));
 
+	// return random number outside of our function
+	return randomNum;
 }
