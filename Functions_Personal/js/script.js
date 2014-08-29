@@ -23,10 +23,10 @@ while (diaNum === "" || isNaN(diaNum)) {
 }
 
 // create categories for the "if...then" statements for the varying 5 levels of blood pressure results 
-var normal = "Your blood pressure is Normal";
-var highNormal = "You should take caution with your blood pressure and see a doctor about changing into healthier life habits and choices, you may have prehypertension";
-var highBP1 = "You should speak with your doctor because you have symptons of High Blood Pressure stage 1";
-var highBP2 = "Seek Medical attention promptly, you are having symptons of Very High Blood Pressure stage 2"
+var normal = "Your blood pressure of " + sysNum + "mm Hg is Normal";
+var highNormal = "Your blood pressure of " + sysNum + "mm Hg can be a sign of prehypertension. Talk to your doctor, he may reccommend changing to healthier eating habits along with other smart and healthy life habits and choices to look into";
+var highBP1 = "Your blood pressure reading: " + sysNum + "mm Hg is measured as a High Blood Pressure Level! You should seek medical attention quickly and let them know you are showing signs of High Blood Pressure stage 1";
+var highBP2 = "Seek Medical attention promptly, " + sysNum + "mm Hg is measured as being Very High Blood Pressure - level 2!";
 
 // use conditionals to check the several outcomes in each category of blood pressure readings(American Heart Association, 2014)
 if( sysNum <= 120 && diaNum <= 80) {
