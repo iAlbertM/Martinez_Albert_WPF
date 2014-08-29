@@ -37,3 +37,7 @@ function randomizer(minNum, maxNum){
 var results1 = randomizer(min, max);
 // check if function is reusable
 console.log(results1);
+
+
+var results2 = randomizer(14, 35);
+console.log(results2);
