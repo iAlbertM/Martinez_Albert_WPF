@@ -20,13 +20,12 @@ if (age < 18) {
 }
 // create a function that stores the names of the party guests
 function partyGuest(guestName, guestAge){
-	var guestList = [guestName, guestAge];
-	var guestNum;
-	for (guestNum = 0; guestNum <= 2; guestNum++) {
-		console.log("New Guest for your event: " + guestList[guestNum] + ", " + guestList[guestAge]);
-	}
-	return guestList[guestNum];
+	// store the names in a variable toat writes them to the console on who the new invite is
+	var guestList = console.log("New Guest for your event: " + guestName + ", " + guestAge);
+
+	// return the guestList name and age
+	return guestList;
 }
 
+// need to catch the returned variable
 var guestList1 = partyGuest(guest, age);
-console.log(guestlist1);
