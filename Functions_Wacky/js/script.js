@@ -8,15 +8,11 @@ var guest = prompt("In order to join the party tonight, you must sign in\nPlease
 while (guest === "" || !(isNaN(guest)) ){
 	guest = prompt("Pleae dont leave fields blank and please enter letters for your name. Please enter your name:");
 }
-//prompt user for their age to make sure they are at least 21 +
+//prompt user for their age to make sure they are at least 18+,check for empty fields, and ensure they enter a number
 var age = prompt("For security purposes\nHow old are you?");
-while (age === "" || isNaN(age)){
+while (age === "" || isNaN(age) || Number(age) <= 17){
 	// reprompt user
-	age = prompt("Please do not leave fields blank and only enter your actual age.\nFor security purposes please enter your age:");
-} 
-if (age < 18) {
-	// tell user they are too young to party
-	console.log("I'm sorry but you're not the right age for this event. Try again soon!");
+	age = prompt("Please do not leave fields blank and only enter your actual age, and this is an 18+ event\nFor security purposes please enter your age:");
 }
 // create a function that stores the names of the party guests
 function partyGuest(guestName, guestAge){
