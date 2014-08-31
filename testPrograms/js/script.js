@@ -1,7 +1,9 @@
 // Albert Martinez
 // Attempt at a real industry function creation
 
-// PPROBLEM: create a program that determines the differences in dimensions between two objects in pixels
+/* PPROBLEM: You have 2 vector shapes with a given width and height in px: the target element and the test element. Create a function that calculates the differences between the two widths and heights.
+Then convert the dimensions of the objects dimensions into the targets dimensions. 
+*/
 
 // GIVENS:
 // define the first elements dimensions
@@ -33,20 +35,15 @@ function reshape(testW, testH) {
 
 	// determine the excess (-) or needed (+) value to convert the test dimensions into the user defined dimensions
 	if(width < testW) {
-		console.log("Your elements width is greater than the target width.\nThe difference is " + Number(testW - width) + "px");
-		var resize = prompt("Would you like to resize your element?\nPlease enter 'y' for yes or 'n' for no");
-		if (resize.toUppercase() === "Y" || resize.toUppercase === "YES") {
-			testW -= (testW - width);
-		} else {
-			console.log("width check: complete");
-		}
-		
+		console.log("Your elements width is greater than the target width by " + Number(testW - width) + "px"); 
+		testW -= (testW - width);
 	} else if (width > testW) {
 		console.log("Your elements width is less than the target width.\nThe difference is " + Number(width - testW) + "px");
 		testW += (width - testW);
 	} else {
 		console.log("I've got no changes in here");
 	} w = Number(testW);
+
 
 	if(height < testH) {
 		console.log("the height difference is " + Number(testH - height) + "px");
@@ -60,11 +57,13 @@ function reshape(testW, testH) {
 	return Number(w) + "px x " + Number(h) + "px";
 }
 
-
+// FUNCTION CALL:
+// Catch the returning variable in the variable named redShape (redefined shape)
 var redShape = reshape(testWidth, testHeight);
 console.log(redShape);
-document.write(redShape);
+document.write(redShape + "</br>");
 
+// re-use the reshape function with an example
 var redShape2 = reshape(24, 14);
 console.log(redShape2);
 document.write(redShape2)
