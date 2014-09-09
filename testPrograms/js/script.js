@@ -1,17 +1,34 @@
-// Albert Martinez
-// Auguest 31, 2014
-// Attempt at a real industry function creation and a birthday promise kept that was made by me to me. To create a program before the end of August 2014 that was complex enough that it used much of what I learned in class. 
+/*
+Albert Martinez
+Auguest 31, 2014
+Industry_Personal Assignment
+*/
 
 
-/* PPROBLEM: You have 2 vector shapes with a given width and height in px: the target element and the test element. Create a function that calculates the differences between the two widths and heights.
-Then convert the dimensions of the objects dimensions into the targets dimensions. 
+// GOAL
+
+/* Test current working knowledge plus skills and techniques learned in recent class (web programming fundumentals) and apply them 
+to a ficticious client project based on a real-life client project request. My code must be readable, user- and developer-friendly, practical, serve its purpose, and solve the problem with style
+*/
+
+
+// PPROBLEM
+
+/* Saphire studio is creating an app that helps beginning graphic designers to create vector artwork (like a simplified adobe illustrator). One of the vast tools will be a simple tool to help
+determine the differences in sizes of selected shapes so that a designer can accurately size and resize elements as needed and calculate column grids etc.
+Create a program that can calculate and display the width and height differnece between selected shapes
+
+** BONUS: After establishing that two objects have different dimensions, add a feature that allows the
+user to have an option to resize the compared shapes to one of the compared shape dimensions.
 */
 
 
 // GIVENS:
+
 // define the target elements dimensions
 var width = 1920;
 var height = 1080;
+
 // show the user the target elements dimensions that he will be comparing his test element to
 document.write("The target element width: " + width + "px and its height: " + height + "px </br>");
 console.log("The target element width: " + width + "px and its height: " + height + "px </br>");
