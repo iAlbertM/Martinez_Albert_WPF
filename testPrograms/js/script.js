@@ -29,17 +29,17 @@ user to have an option to resize the compared shapes to one of the compared shap
 var width = 1920;
 var height = 1080;
 
-// show the user the target elements dimensions that he will be comparing his test element to
+// show the user the pre-selecte dimensions that he will be comparing his test element to
 document.write("The target element width: " + width + "px and its height: " + height + "px </br>");
 console.log("The target element width: " + width + "px and its height: " + height + "px </br>");
 
 // prompt the user for the test  elements width
 var testWidth = parseInt(prompt("To find the differneces in sizes of the objects we need its dimensions\nPlease begin by entering the elements width:"));
-// Validate user prompts: check for blank fields and string values
-while (testWidth === "" || isNaN(testWidth)) {
-	// reprompt the user
-	testWidth = parseInt(prompt("Please do not leave fields blank and only use numerical values.\nPlease enter a value for elements width:"));
-}
+	// Validate user prompts: check for blank fields and string values
+	while (testWidth === "" || isNaN(testWidth)) {
+		// reprompt the user
+		testWidth = parseInt(prompt("Please do not leave fields blank and only use numerical values.\nPlease enter a value for elements width:"));
+	}
 
 // prompt the user for the elements hight
 var testHeight = parseInt(prompt("Enter its height value:"));
